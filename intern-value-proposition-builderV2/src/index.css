@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    @apply bg-white text-dell-gray;
+  }
+  h1, h2, h3 {
+    @apply font-sans font-bold text-dell-gray;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-md bg-dell-blue px-5 py-2.5 text-sm font-semibold text-white shadow-card transition-colors hover:bg-dell-blue-dark disabled:cursor-not-allowed disabled:opacity-40;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-md border border-gray-300 bg-white px-5 py-2.5 text-sm font-semibold text-dell-gray transition-colors hover:bg-dell-gray-light disabled:cursor-not-allowed disabled:opacity-40;
+  }
+  .btn-tertiary {
+    @apply inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium text-gray-500 underline-offset-2 hover:text-dell-gray hover:underline;
+  }
+  .field-label {
+    @apply mb-1 block text-sm font-semibold text-dell-gray;
+  }
+  .field-input {
+    @apply w-full rounded-md border border-gray-300 px-3 py-2 text-sm text-dell-gray shadow-sm focus:border-dell-blue focus:outline-none focus:ring-2 focus:ring-dell-blue/30;
+  }
+  .card {
+    @apply rounded-lg border border-gray-200 bg-white p-5 shadow-card;
+  }
+}
